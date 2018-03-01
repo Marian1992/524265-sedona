@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Марьян  Чуфаров](https://up.htmlacademy.ru/htmlcss/20/user/524265).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Мальнев](https://htmlacademy.ru/profile/fuckomako)
 
 ---
 
