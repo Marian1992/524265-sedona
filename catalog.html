@@ -6,25 +6,22 @@
   </head>
 
   <body>
-   <header class="main_header">
-    <nav class="main-_navigation">
-     <ul class="site_navigation">
+  <header class="main_header">
+   <nav class="main-_navigation">
+    <ul class="site_navigation">
       <li class="navigation_item"><a href="info.html">Информация</a></li>
       <li class="navigation_item"><a href="Photovideo.html">Фото и видео</a></li>
+    </ul>
+    <img  class="logo" src="http://placehold.it/150x100" alt="Логотип">
+    <ul class="main navigation">
       <li class="navigation_item"><a href="Map.html">Карта штата</a></li>
       <li class="navigation_item"><a href="Hotels.html">Гостиницы</a></li>
-     </ul>
-    </nav>
+    </ul>
+   </nav>
+  </header>
 
-    <div class="logo">
-     <a>
-      <img src="http://placehold.it/150x100" alt="">
-     </a>
-    </div>
-   </header>
-
-   <main>
-     <img src="http://placehold.it/150x100" alt="">
+   <main class="main-catalog">
+     <img src="img/background.jpg" alt="Бэкграунд">
       <div class="infrastructure">
        <h3>Инфраструктура:</h3>
         <ul class="infrastructure-menu">
@@ -41,7 +38,18 @@
      </div>
      <div class="price">
        <h3>Стоимость в сутки(Р):</h3>
-     </div>
+       <ul class="filter">
+         <li class="filter-item">от 0</li>
+         <li class="filter-item">до 3000</li>
+       </ul>
+       </div>
+       <div class="filter">
+        <img src="img/filter-button.svg" alt="Кнопка фильтра">
+       </div>
+       <div class="show">
+          <a class="button" href="#">Показать</a>
+       </div>
+
 
      <div class="search">
        <h1>Найдено: 3</h1>
@@ -56,7 +64,7 @@
 <!-- Возможно здесь вместо тега div нужно использовать тег section?, так как вроде бы это небольшой
 раздел в одном смысловом стиле, вроде) -->
      <div class="hotels">
-      <img src="http://placehold.it/150x100" alt="Amara">
+      <img src="img/hotel1.jpg" alt="Амара">
       <b class="Amara">Amara resort & SPA</b>
        <ul class="hotels-item">
          <li class="hotel-item">Гостиница</li>
@@ -69,17 +77,17 @@
        <input type="button" name="reserve" value="Забронировать">
       </div>
        <ul class="stars">
-         <li class="stars-item"><img src="http://placehold.it/50x25" alt="Звезда"></li>
-         <li class="stars-item"><img src="http://placehold.it/50x25" alt="Звезда"></li>
-         <li class="stars-item"><img src="http://placehold.it/50x25" alt="Звезда"></li>
-         <li class="stars-item"><img src="http://placehold.it/50x25" alt="Звезда"></li>
+         <li class="stars-item"><img src="img/star.svg" alt="Звезда"></li>
+         <li class="stars-item"><img src="img/star.svg" alt="Звезда"></li>
+         <li class="stars-item"><img src="img/star.svg" alt="Звезда"></li>
+         <li class="stars-item"><img src="img/star.svg" alt="Звезда"></li>
        </ul>
        <div class="rating">
          <p class="rating-score">рейтинг: 8,5 </p>
        </div>
 
        <div class="hotels">
-        <img src="http://placehold.it/150x100" alt="Amara">
+        <img src="img/hotel2.jpg" alt="Дезерт">
         <b class="desert">Desert Quail Inn</b>
          <ul class="hotels-item">
            <li class="hotel-item">Мотель</li>
@@ -89,16 +97,16 @@
          <input type="button" name="reserve" value="Забронировать">
         </div>
           <ul class="stars">
-           <li class="stars-item"><img src="http://placehold.it/50x25" alt="Звезда"></li>
-           <li class="stars-item"><img src="http://placehold.it/50x25" alt="Звезда"></li>
-           <li class="stars-item"><img src="http://placehold.it/50x25" alt="Звезда"></li>
+            <li class="stars-item"><img src="img/star.svg" alt="Звезда"></li>
+            <li class="stars-item"><img src="img/star.svg" alt="Звезда"></li>
+            <li class="stars-item"><img src="img/star.svg" alt="Звезда"></li>
          </ul>
          <div class="rating">
            <p class="rating-score">рейтинг: 8,9 </p>
          </div>
 
          <div class="hotels">
-          <img src="http://placehold.it/150x100" alt="Villas">
+          <img src="img/hotel2.jpg" alt="Вилас">
           <b class="Villas">Amara resort & SPA</b>
            <ul class="hotels-item">
             <li class="hotel-item">Апартаменты</li>
@@ -108,27 +116,29 @@
            <input type="button" name="reserve" value="Забронировать">
           </div>
             <ul class="stars">
-             <li class="stars-item"><img src="http://placehold.it/50x25" alt="Звезда"></li>
-             <li class="stars-item"><img src="http://placehold.it/50x25" alt="Звезда"></li>
+              <li class="stars-item"><img src="img/star.svg" alt="Звезда"></li>
+              <li class="stars-item"><img src="img/star.svg" alt="Звезда"></li>
             </ul>
            <div class="rating">
              <p class="rating-score">рейтинг: 9,2 </p>
            </div>
        </main>
-   <footer class="main-footer">
-     <b class="footer-visit">#VisitSedona</b>
-      <div class="footer-social">
-       <ul>
-        <li><a class="social-button" href="#">Твитер</a></li>
-        <li><a class="social-button" href="#">Фейсбук</a></li>
-        <li><a class="social-button" href="#">Ютуб</a></li>
-      </ul>
-     </div>
-     <div class="footer-copyright">
-       <a class="button" href="https://htmlacademy.ru">
-         <img src="http://placehold.it/150x100" alt="">
-       </a>
-      </div>
-    </footer>
+
+       <footer class="main-footer">
+        <b class="footer-visit">#VisitSedona</b>
+         <div class="footer-social">
+          <ul>
+           <li><a class="social-button" href="https://twitter.com"><img src="img/twitter.svg" alt="Твитер">Твитер</a></li>
+           <li><a class="social-button" href="https://facebook.com"><img src="img/fb-icon.svg" alt="Фейсбук">Фейсбук</a></li>
+           <li><a class="social-button" href="https://youtube.com"><img src="img/youtube.svg" alt="Ютуб">Ютуб</a></li>
+         </ul>
+        </div>
+        <div class="footer-copyright">
+          <a class="button" href="https://htmlacademy.ru">
+            <img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy">
+          </a>
+        </div>
+
+      </footer>
    </body>
-  </html>
+   </html>
