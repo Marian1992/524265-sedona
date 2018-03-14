@@ -15,24 +15,22 @@
     <img  class="logo" src="http://placehold.it/150x100" alt="Логотип">
     <ul class="main navigation">
       <li class="navigation_item"><a href="Map.html">Карта штата</a></li>
-      <li class="navigation_item"><a href="Hotels.html">Гостиницы</a></li>
+      <li class="navigation_item"><a href="catalog.html">Гостиницы</a></li>
     </ul>
   </nav>
  </header>
 
     <main class="main">
     <div class="main-promo">
-     <img src="img/main.jpg" alt="Промо">
+     <img src="img/main.jpg" width="1200" height="800" alt="Промо">
     </div>
 
-    <p class="main-slogan">
-      <b>Седона - небольшой городок в Аризоне, заслуживающий большего!</b>
-    </p>
-    <p class="main-reasons">
-       Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон
-    </p>
+    <div class="main-slogan">
+      <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+       <p class="main-slogan-reason">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</p>
+      </div>
     <div class="main-reason">
-      <img src="img/main1.jpg" alt="Причина №1">
+      <img src="img/main1.jpg"  width="800" height="401" alt="Причина №1">
        <ul class="main-reason-1">
         <li><h2>Настоящий городок</h2><li>
         <li><p>-№1-</p></li>
@@ -41,17 +39,17 @@
     </div>
 
     <section class="features">
-      <img src="img/icon-1.svg" alt="Жильё">
+      <img src="img/icon-1.svg" width="75" height="72" alt="Жильё">
       <h2>Жильё</h2>
         <ul class="features-list">
          <li class="features-item">Рекомендуем пожить в настоящем мотеле, все как в кино!</li>
         </ul>
-      <img src="img/icon-3.svg" alt="Еда">
+      <img src="img/icon-3.svg" width="74" height="70" alt="Еда">
        <h2>Еда</h2>
         <ul class="food-list">
           <li>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</li>
         </ul>
-        <img src="img/icon-2.svg" alt="Сувениры">
+        <img src="img/icon-2.svg" width="64" height="76" alt="Сувениры">
          <h2 class="souveniers">Сувениры</h2>
           <ul class="souveniers-list">
            <li class="souveniers-item">не только китайского, но и местного производства!</li>
@@ -59,7 +57,7 @@
           </section>
 
            <div class="main-reason-2">
-            <img src="img/main1.jpg" alt="Причина №2">
+            <img src="img/main1.jpg" width="800" height="400" alt="Причина №2">
              <ul class="main-reason-2">
               <li><h2>Там есть мост дьявола</h2><li>
               <li><p>-№2-</p></li>
@@ -91,30 +89,70 @@
              </ul>
             </div>
 
-            <div class="travel">
-              <h1>Заинтересовались?</h1>
-              <p>Укажите предпологаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+            <div class="search">
+              <h2>Заинтересовались?</h2>
+              <p class="search-description">Укажите предпологаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+              <button type="button" class="search-btn">Поиск гостиницы в Седоне</button>
             </div>
 
-            <section class="search">
-              <img class="map" src="img/map.png" alt="Карта">
-              <h2>Поиск гостиницы в Седоне</h2>
-               <!-- Форму поиска пока не делал-->
-            </section>
+            <div class="map">
+              <img class="map-pic" src="img/map.png" width="1718" height="748" alt="Карта">
+            </div>
+
+            <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
+            <div class="search-form">
+              <div class="search-form-field">
+                <label class="search-form-label" for="from">Дата заезда:</label>
+                <input type="text" class="search-form-field" id="from">
+                <button type="button" class="serach-form-cal"><img src="img/calendar.svg" width="21" height="22" alt="Calendar"></button>
+              </div>
+              <div class="search-form-field">
+                <label class="search-form-label" for="to">Дата выезда:</label>
+                <input type="text" class="search-form-field" id="to">
+                <button type="button" class="serach-form-calendar"><img src="img/calendar.svg" width="21" height="22" alt="Calendar"></button>
+              </div>
+            </div>
+
+              <div class="search-form-row">
+                <div class="search-form-human">
+                 <label for="mature-count">Взрослые:</label>
+                 <div class="number">
+                   <button type="button" class="minus-button">&minus;</button>
+                   <input type="text" name="mature" id="mature-count">
+                   <button type="button" class="plus-button">&plus;</button>
+                 </div>
+               </div>
+
+              <div class="search-form-human">
+                <label for="children-count">Дети:</label>
+                 <div class="children-1">
+                  <button type="button" class="minus-button">&minus;</button>
+                  <input type="text" name="children" id="children-count" placeholder="0">
+                  <button type="button" class="plus-button">&plus;</button>
+                </div>
+              </div>
+              <div class="search-button">
+                <button type="button" class="search-button">Найти</button>
+              </div>
+            </div>
+          </form>
+
           </main>
 
           <footer class="main-footer">
-           <b class="footer-visit">#VisitSedona</b>
+            <div class="footer-visit">
+             <a href="#" class="hashtag">#VisitSedona</a>
+            </div>
             <div class="footer-social">
              <ul>
-              <li><a class="social-button" href="https://twitter.com"><img src="img/twitter.svg" alt="Твитер">Твитер</a></li>
-              <li><a class="social-button" href="https://facebook.com"><img src="img/fb-icon.svg" alt="Фейсбук">Фейсбук</a></li>
-              <li><a class="social-button" href="https://youtube.com"><img src="img/youtube.svg" alt="Ютуб">Ютуб</a></li>
+              <li><a class="social-button" href="https://twitter.com"><img src="img/twitter.svg" width="46" height="48"  alt="Твитер">Твитер</a></li>
+              <li><a class="social-button" href="https://facebook.com"><img src="img/fb-icon.svg" width="46" height="48"  alt="Фейсбук">Фейсбук</a></li>
+              <li><a class="social-button" href="https://youtube.com"><img src="img/youtube.svg"  width="46" height="48" alt="Ютуб">Ютуб</a></li>
             </ul>
            </div>
            <div class="footer-copyright">
              <a class="button" href="https://htmlacademy.ru">
-               <img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy">
+               <img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy" width="100" height="50">
              </a>
            </div>
 
